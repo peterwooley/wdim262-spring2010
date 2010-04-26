@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Valid HTML5 Template!</title>
+		<script type="text/javascript">
+			// Numbers
+			var number = 403940;
+			var pi = Math.PI;
+			var product = number * (42 - 31 / 4 * 3);
+			var random = Math.random();
+			var sqrt = Math.sqrt(16);
+			
+			//console.log(number, pi, product, random, sqrt);
+			
+			// Strings
+			var sentence = "Write whatever \"we want\".";
+			
+			var header = "<h1>Header</h1>";
+
+			var newSentence = sentence + " I like my iPhone.";
+			
+			var addNumber = sentence + 1;
+			
+			var addString = 1 + sentence;
+			
+			var confusedNumber = parseInt("1") + 1;
+			
+			//console.log(confusedNumber);
+			
+			// Arrays (aka List, Vectors)
+			var theArray = ["My string.", 42, 1337, "Awesome.", pi];
+			var firstElement = theArray[0];
+			var secondElement = theArray[1]
+			
+			var user = ["Steve", "Ballmer", "CEO of Microsoft", 106, "Ferret"];
+			//console.log(user);
+			//console.log(user.length);
+			user[user.length] = "Liger";
+			//console.log(user);
+			//console.log(user.length);
+			
+			user[9] = "Monkeys";
+			
+			//console.log(user);
+			//console.log(user.length);
+			
+			// Objects
+			
+			var userObject = {firstName: "Steve", lastName: "Ballmer"};
+			//console.log(userObject.firstName);
+			//console.log(userObject.lastName);
+			
+			var awesomeUser = {
+				name: {
+					first: "Steve",
+					last: "Ballmer",
+					middle: "Anthony"
+				},
+				position: "CEO"
+			};
+			
+			//console.log(awesomeUser.name.first);
+			
+			//console.log(awesomeUser);
+			
+			userObject.favoriteAnimal = "Liger";
+			
+			//console.log(userObject);
+			
+			var myString = "peterwooley@gmail.com, peter@peterwooley.com, pwooley@mcafee.com";
+			//console.log(myString.split(", "));
+			
+			// Boolean (True & False)
+			var isTrue = true;
+			var isFalse = 0;
+			
+			//console.log(isFalse === "0");
+			
+			// undefined
+			var defined = "defined";
+			
+			console.log(typeof theAwesomeVariableThatDoesNotExist === "undefined");
+			
+			// null
+			var isNull = null;
+			
+			userObject = null;
+			
+			// Blocks
+			
+			{{{{{{{{{{
+			{{{{{{{{
+			{{{{{{{
+				var insideOfABlock = true;
+			}}}}}}}
+			}}}}}}}}
+			}}}}}}}}}}
+			
+			// Functions
+			var aMagicFunction = function(fontSize, textDecoration) {
+				var heading = document.getElementById("heading");
+				//console.log(heading);
+				alert("I'm changing the header font size to " + fontSize);
+				heading.style.fontSize = fontSize;
+				heading.style.textDecoration = textDecoration;
+			}
+			
+			var rollTheDice = function(sides) {
+				if (typeof sides === "undefined") {
+					sides = 20;
+				}
+				
+				var roll = Math.round( Math.random() * sides  );
+				
+				if(roll === 0) {
+					roll = 1;
+				} else {
+					alert("Your dice rolled: " + roll);
+				}
+			}
+		
+			window.onload = function() {
+				rollTheDice();
+				rollTheDice(6);
+			}
+		</script>
+	</head>
+	<body>
+		<h1 id="heading">Awesome Heading!</h1>
+	</body>
+</html>
